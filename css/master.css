@@ -1,0 +1,1747 @@
+/*CSS SET-UP
+======================*/
+body{font-family:“Helvetica Neue”,Arial,Helvetica,sans-serif;}
+@font-face{font-family:comicc;src:url(../fonts/sing.ttf);}
+@font-face{font-family:chubb;src:url(../fonts/chubhand.ttf);}
+#the-screen{border:1px solid #444444;left:168px;margin:0;padding:0;
+	position:relative;top:77px;height:325px;width:425px;overflow:hidden;}
+#the-screen div{position:absolute;top:0;left:0;padding:0;margin:0;opacity:0;}
+#screen-02,
+#screen-03,
+#screen-04,
+#screen-05,
+#screen-06,
+#screen-07,
+#screen-08,
+#screen-09,
+#screen-10,
+#screen-11,
+#screen-12,
+#screen-13,
+#screen-14,
+#screen-15,
+#screen-16,
+#screen-17,
+#screen-18,
+#screen-19{height:325px;width:425px;}
+/* SCREEN-01
+====================================================*/
+#the-screen #screen-01 {
+	background: #53809F url(../img/screen01-bg.jpg) no-repeat scroll 0 100%;
+	height: 325px;
+	width: 425px;
+	opacity:1;
+}
+
+
+/* SCREEN-01 H1 BASIC SETUP
+===============================*/
+#the-screen #screen-01 h1 {
+	font-family: comicc;
+	font-size: 3em;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	position: relative;
+	top: 60px;
+	color:yellow;
+text-shadow: -1px 1px 0px #b82015;
+-webkit-transform:scale(3);
+}
+
+/* SCREEN-01 H1 ANIMATION SETUP
+================================*/
+@-webkit-keyframes screen_one_title{
+0%{-webkit-transform:scale(1);opacity:0;}
+15%{-webkit-transform:scale(3.75);opacity:1;}
+25%{-webkit-transform:scale(1);}
+35%{-webkit-transform:scale(3);}
+100%{-webkit-transform:scale(3);}
+}
+/* SCREEN-01 H1 ANIMATION FUNCTION
+================================*/
+#the-screen #screen-01 h1{
+-webkit-animation-name:screen_one_title;
+-webkit-animation-duration:11s;
+-webkit-animation-iteration-count:1;
+-webkit-transform-origin:50% 50%;
+-webkit-animation-timing-function:ease-in-out;
+}
+/* SCREEN-01 H2 BASIC SETUP
+===============================*/
+#the-screen #screen-01 h2
+{color:#000;font-family:chubb;position:relative;bottom:-100px;text-align:center;text-shadow: 0px 1px 0px #fff;z-index:11111;font-size:1em;-webkit-transform:translate(0px,0px) scale(2);
+	}
+
+#the-screen #screen-01 h2 a {
+	color:#000;
+	text-decoration:none;
+}
+
+#the-screen #screen-01 h2 span {
+font-family:thinne;
+letter-spacing:-.15em;
+font-size:12px;
+}
+
+
+/* SCREEN-01 H2 ANIMATION SETUP
+================================*/
+@-webkit-keyframes screen_one_subtitle{
+0%{-webkit-transform:translate(0px,300px) scale(1);}
+25%{-webkit-transform:translate(0px,300px) scale(1);}
+35%{-webkit-transform:translate(0px,-5px) scale(2);}
+40%{-webkit-transform:translate(0px,0px) scale(2);}
+100%{-webkit-transform:translate(0px,0px) scale(2);}
+}
+/* SCREEN-01 H2 ANIMATION FUNCTION
+================================*/
+#the-screen #screen-01 h2{
+-webkit-animation-name:screen_one_subtitle;
+-webkit-animation-duration:11s;
+-webkit-animation-iteration-count:1;
+-webkit-transform-origin:50% 50%;
+-webkit-animation-timing-function:ease-out;
+}
+
+#git_er_goin a {
+	display:block;
+	position:absolute;
+	bottom:0;
+	z-index:9999999999;
+}
+
+/* SCREEN-02 CITY ANIMATION BASIC SETUP
+====================================================*/
+#the-screen #screen-02 div,
+#the-screen #screen-02 img {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#the-screen #screen-02 {
+	background: #CCCDF5 url(../img/screen02-cityscape.png) no-repeat scroll 0 100%;	
+}
+
+/* SCREEN-02 CITY ANIMATION SETUP
+=========================================*/
+@-webkit-keyframes screen_two_city{
+0%{background-position-x:0;}
+100%{background-position-x:100%;}
+}
+/* SCREEN-02 CITY ANIMATION FUNCTION
+=========================================*/
+#the-screen #screen-02{
+-webkit-animation-name:screen_two_city;
+-webkit-animation-duration:10s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-timing-function:ease-in-out;
+-webkit-animation-delay:10s;
+
+}
+/* SPIDERMAN-02 BASIC SETUP
+====================================================*/
+#the-screen #screen-02 div{/*opacity:1;*/}
+#the-screen #screen-02 .spiderman-complete .web-shot{height:50px;}
+#the-screen #screen-02 .spiderman-complete{width:26px;height:70px;}
+/* SCREEN-02 SPIDERMAN ANIMATION SETUP
+================================*/
+@-webkit-keyframes spiderman_complete{
+0%{-webkit-transform:rotate(30deg) scale(1);left:500px;top:-100px;}
+40%{-webkit-transform:rotate(60deg) scale(2);left:250px;top:-10px;}
+80%{-webkit-transform:rotate(-10deg) scale(6);left:500px;top:-290px;}
+100%{-webkit-transform:rotate(-50deg);left:530px;top:-170px;}
+}
+/* SCREEN-02 SPIDERMAN ANIMATION FUNCTION
+================================*/
+#the-screen #screen-02 .spiderman-complete{
+-webkit-animation-name:spiderman_complete;
+-webkit-animation-duration:7s;
+-webkit-animation-iteration-count:1;
+-webkit-transform-origin:50% 0%;
+-webkit-animation-delay:10s;
+-webkit-animation-timing-function:ease-in-out;
+}
+#the-screen #screen-02 .spiderman-legs{position:relative;top:-10px;left:-1px;width:26px;}
+/* FIRST LEG ROTATES FROM HIP
+================================*/
+#the-screen #screen-02 .spiderman-legs .spiderman-leg-01,
+#the-screen #screen-02 .spiderman-legs .spiderman-leg-02{position:absolute;top:0;left:6px;}
+#the-screen #screen-02 .spiderman-legs .spiderman-leg-02{left:12px;}
+/* SCREEN-02 SPIDERMAN ANIMATION SETUP
+================================*/
+@-webkit-keyframes spiderman_legs-01{
+0%{-webkit-transform:rotate(10deg);left:6px;top:0px;}
+40%{-webkit-transform:rotate(-80deg);left:4px;top:2px;}
+80%{-webkit-transform:rotate(-120deg);left:4px;top:1px;}
+100%{-webkit-transform:rotate(-150deg);left:4px;top:0px;}
+}
+
+@-webkit-keyframes spiderman_legs-02{
+	0%{-webkit-transform:rotate(10deg);left:8px;top:0px;}
+	40%{-webkit-transform:rotate(-80deg);left:6px;top:2px;}
+	80%{-webkit-transform:rotate(-120deg);left:6px;top:1px;}
+	100%{-webkit-transform:rotate(-150deg);left:6px;top:0px;}
+}
+/* SCREEN-02 SPIDERMAN ANIMATION FUNCTION
+================================*/
+#the-screen #screen-02 .spiderman-legs .spiderman-leg-01{
+-webkit-animation-name:spiderman_legs-01;
+-webkit-animation-duration:7s;
+-webkit-animation-iteration-count:1;
+-webkit-transform-origin:5px 0%;
+-webkit-animation-delay:10s;
+-webkit-animation-timing-function:ease-in-out;
+-webkit-animation-direction:alternate;
+}
+
+#the-screen #screen-02 .spiderman-legs .spiderman-leg-02{
+-webkit-animation-name:spiderman_legs-02;
+-webkit-animation-duration:7s;
+-webkit-animation-iteration-count:1;
+-webkit-transform-origin:5px 0%;
+-webkit-animation-delay:10s;
+-webkit-animation-timing-function:ease-in-out;
+-webkit-animation-direction:alternate;
+}
+
+/* SCREEN-02 SPIDERMAN BASIC SETUP
+====================================================*/
+#the-screen #screen-02 .spiderman-legs .spiderman-leg-01 .spiderman-shin-01,
+#the-screen #screen-02 .spiderman-legs .spiderman-leg-02 .spiderman-shin-02{
+	border:0;
+	top:-8px;
+	}
+/* SCREEN-02 SPIDERMAN ANIMATION SETUP
+================================*/
+@-webkit-keyframes spiderman_shin{
+0%{-webkit-transform:rotate(0deg);}
+20%{-webkit-transform:rotate(40deg);}
+40%{-webkit-transform:rotate(0deg);}
+100%{-webkit-transform:rotate(0deg);}
+}
+/* SCREEN-02 SPIDERMAN ANIMATION FUNCTION
+================================*/
+#the-screen #screen-02 .spiderman-legs .spiderman-leg-02 .spiderman-shin-02{
+-webkit-animation-name:spiderman_shin;
+-webkit-animation-duration:10s;
+-webkit-animation-iteration-count:infinite;
+-webkit-transform-origin:5px 0%;
+-webkit-animation-delay:10s;
+-webkit-animation-timing-function:ease-in-out;
+-webkit-animation-direction:alternate;
+}
+/* SCREEN-02 SHIN ANIMATION FUNCTION
+=========================================*/
+#the-screen #screen-02 .spiderman-complete .web-shot {
+}
+
+
+/* SCREEN-03 BASIC SETUP
+=========================================*/
+#the-screen #screen-03 {
+	position: relative;
+}
+
+#the-screen #screen-03 div,
+#the-screen #screen-03 img {
+	margin: 0;
+	padding: 0;	
+	}
+
+#the-screen #screen-03 img.bg {
+position:absolute;
+margin:0;
+padding:0;
+}
+
+/*BASIC SETUP
+================================*/
+#the-screen #screen-03 .spiderman-complete {
+	width:300px;
+	height:300px;
+	
+}
+
+/* SCREEN-03 SPIDERMAN ANIMATION SETUP
+================================*/
+@-webkit-keyframes spiderman_zoom{
+0%{-webkit-transform:scale(1);}
+100%{-webkit-transform:scale(2);}
+}
+
+/* SCREEN-03 SPIDERMAN ANIMATION FUNCTION
+================================*/
+#the-screen #screen-03 img.bg,
+#the-screen #screen-03 .spiderman-complete {
+-webkit-animation-name:spiderman_zoom;
+-webkit-animation-duration:5000ms;
+-webkit-animation-iteration-count:1;
+-webkit-transform-origin:0 0;
+-webkit-animation-delay:15000ms;
+-webkit-animation-timing-function:ease-in-out;
+}
+
+
+#the-screen #screen-03 img.spiderman-torso {
+	left:170px;
+	position:absolute;
+	top:8px;
+	width:120px;
+}
+
+
+/*BASIC SETUP
+================================*/
+#the-screen #screen-03 .spiderman-leftarm {
+	left:170px;
+	top:66px;
+	width:25px;
+}
+
+#the-screen #screen-03 .spiderman-leftarm img {
+	float:left;
+	width:25px;
+}
+
+/* SCREEN-03 SPIDERMAN ANIMATION SETUP
+================================*/
+@-webkit-keyframes spiderman_leftarm{
+0%{-webkit-transform:rotate(-10deg);}
+20%{-webkit-transform:rotate(60deg);left:175px;top:70px;}
+90%{-webkit-transform:rotate(60deg);left:177px;top:71px;}
+100%{-webkit-transform:rotate(-10deg);top:66px;}
+}
+
+/* SCREEN-03 SPIDERMAN ANIMATION FUNCTION
+================================*/
+#the-screen #screen-03 .spiderman-leftarm {
+-webkit-animation-name:spiderman_leftarm;
+-webkit-animation-duration:5s;
+-webkit-animation-iteration-count:1;
+-webkit-transform-origin:17px 0%;
+-webkit-animation-delay:15000ms;
+-webkit-animation-timing-function:ease-in-out;
+}
+
+#the-screen #screen-03 img.left-arm {
+}
+
+/*BASIC SETUP
+================================*/
+#the-screen #screen-03 img.left-forearm {
+	position:relative;
+	top:-5px;
+	z-index:3333;
+}
+
+/* SCREEN-03 SPIDERMAN ANIMATION SETUP
+================================*/
+@-webkit-keyframes spiderman_forearm{
+0%{-webkit-transform:rotate(100deg);}
+10%{-webkit-transform:rotate(100deg);}
+20%{-webkit-transform:rotate(0deg);}
+100%{-webkit-transform:rotate(0deg);}
+}
+
+/* SCREEN-03 SPIDERMAN ANIMATION FUNCTION
+================================*/
+#the-screen #screen-03 img.left-forearm {
+-webkit-animation-name:spiderman_forearm;
+-webkit-animation-duration:5s;
+-webkit-animation-iteration-count:1;
+-webkit-transform-origin:17px 0%;
+-webkit-animation-delay:15000ms;
+-webkit-animation-timing-function:ease-in-out;
+}
+
+/* SCREEN-03 web ANIMATION SETUP
+================================*/
+#the-screen #screen-03 .spiderman-leftarm .web {
+	background:url(../img/03-web.jpg) no-repeat scroll -2px -1200px transparent;
+	height:300px;
+	left:10px;
+	position:absolute;
+	top:91px;
+	width:5px;
+}
+
+
+/* SCREEN-03 web ANIMATION SETUP
+================================*/
+@-webkit-keyframes spiderman_threeweb{
+0%{background-position: -2px -1200px;}
+80%{background-position: -2px -1200px;}
+90%{background-position: -2px 70px;}
+100%{background-position: -2px 1290px;}
+}
+
+/* SCREEN-03 SPIDERMAN ANIMATION FUNCTION
+================================*/
+#the-screen #screen-03 .spiderman-leftarm .web {
+-webkit-animation-name:spiderman_threeweb;
+-webkit-animation-duration:4s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-delay:15000ms;
+}
+
+
+/* SCREEN-04 BASIC SETUP
+====================================================*/
+#the-screen #screen-04 div,
+#the-screen #screen-04 img {
+	margin: 0;
+	padding: 0;
+	position: relative;
+ 	}
+	
+#the-screen #screen-04 {
+	background: #CCCDF5 url(../img/screen-04.png) no-repeat scroll 0 100%;
+	}
+
+
+#the-screen #screen-04 img {
+position:absolute;
+}
+
+/* SCREEN-04 SPIDERMAN WEB ANIMATION SETUP
+================================*/
+@-webkit-keyframes screenFour_web{
+0%{top:-100px;height:50px;}
+1%{top:-100px;height:50px;}
+10%{top:0px;height:50px;}
+70%{height:500px;}
+100%{height:325px;}
+
+}
+
+/* SCREEN-04 SPIDERMAN WEB ANIMATION FUNCTION
+================================*/
+#the-screen #screen-04 img.web {
+-webkit-animation-name:screenFour_web;
+-webkit-animation-duration:500ms;
+-webkit-animation-iteration-count:1;
+-webkit-animation-delay:19000ms;
+-webkit-animation-timing-function:ease-in-out;
+}
+
+
+
+
+/* SCREEN-04 BASIC SETUP
+====================================================*/
+#the-screen #screen-04 img.car {
+	top:200px;
+	left:30%;width:200px;
+}
+
+/* SCREEN-04 SPIDERMAN WEB ANIMATION SETUP
+================================*/
+@-webkit-keyframes screenFour_car{
+0%{left:50%;width:20px;}
+80%{left:30%;width:200px;}
+100%{left:30%;width:200px;}
+}
+
+/* SPIDERMAN WEB ANIMATION FUNCTION
+================================*/
+#the-screen #screen-04 img.car {
+-webkit-animation-name:screenFour_car;
+-webkit-animation-duration:2s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-delay:19000ms;
+-webkit-animation-timing-function:ease-in-out;
+}
+
+
+
+/* SCREEN-05 BASIC SETUP
+====================================================*/
+#the-screen #screen-05 div,
+#the-screen #screen-05 img {
+	margin: 0;
+	padding: 0;
+	position: relative;
+ 	}
+	
+#the-screen #screen-05 {
+	background: #CCCDF5 url(../img/screen05-city.png) no-repeat scroll 0 100%;
+	}
+
+#the-screen #screen-05 img {
+position:absolute;
+}
+
+#the-screen #screen-05 .car_complete {
+	height:55px;
+	left:290px;
+	margin:0;
+	padding:0;
+	position:relative;
+	top:137px;
+	width:145px;
+	z-index:5555;
+	-moz-transform:rotate(70deg);
+	-webkit-transform:rotate(70deg);
+	-moz-transform-origin:50% 50%;
+	-webkit-transform-origin:50% 50%;
+	opacity:0;
+	}
+
+	@-webkit-keyframes car_complete{
+	0%{-webkit-transform:rotate(0deg);left:-150px;top:240px;opacity:0;}
+	1%{-webkit-transform:rotate(0deg);left:-150px;top:240px;opacity:1;}
+	20%{-webkit-transform:rotate(0deg);left:200px;top:240px;opacity:1;}
+	30%{-webkit-transform:rotate(70deg);left:290px;top:137px;opacity:1;}
+	40%{-webkit-transform:rotate(70deg);left:285px;top:140px;opacity:1;}
+	50%{-webkit-transform:rotate(70deg);left:290px;top:137px;opacity:1;}
+	60%{-webkit-transform:rotate(70deg);left:285px;top:140px;opacity:1;}
+	70%{-webkit-transform:rotate(70deg);left:290px;top:137px;opacity:1;}
+	80%{-webkit-transform:rotate(70deg);left:285px;top:140px;opacity:1;}
+	90%{-webkit-transform:rotate(70deg);left:290px;top:137px;opacity:1;}
+	100%{-webkit-transform:rotate(70deg);left:290px;top:137px;opacity:1;}
+	}
+
+		/*  SPIDERMAN WEB ANIMATION FUNCTION
+		================================*/
+#the-screen #screen-05 .car_complete{
+		-webkit-animation-name:car_complete;
+		-webkit-animation-duration:3s;
+		-webkit-animation-iteration-count:1;
+		-webkit-animation-delay:20000ms;
+		-webkit-animation-timing-function:ease-in;
+		}
+
+#the-screen #screen-05 img.front_tire {
+	bottom:5px;
+	right:23px;
+	-webkit-transform:rotate(0deg);
+	-moz-transform:rotate(0deg);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+}
+
+
+	@-webkit-keyframes front_tire{
+	0%{-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(20000deg);}
+	}
+
+	/*  SPIDERMAN WEB ANIMATION FUNCTION
+	================================*/
+#the-screen #screen-05 img.front_tire{
+	-webkit-animation-name:front_tire;
+	-webkit-animation-duration:10s;
+	-webkit-animation-iteration-count:infinity;
+	-webkit-animation-delay:20000ms;
+	}
+
+
+#the-screen #screen-05 img.back_tire {
+	bottom:5px;
+	left:27px;
+	-webkit-transform:rotate(0deg);
+	-moz-transform:rotate(0deg);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+}
+
+	@-webkit-keyframes back_tire{
+	0%{-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(20000deg);}
+	}
+
+	/*  SPIDERMAN WEB ANIMATION FUNCTION
+	================================*/
+#the-screen #screen-05 img.back_tire {
+	-webkit-animation-name:back_tire;
+	-webkit-animation-duration:10s;
+	-webkit-animation-iteration-count:infinity;
+	-webkit-animation-delay:20000ms;
+	}
+
+
+	#the-screen #screen-05 img.web {
+		bottom:-12px;
+		right:-23px;
+	}
+
+
+
+/* SCREEN-06 BASIC SETUP
+====================================================*/
+#the-screen #screen-06 {
+	background: #CCCDF5 url(../img/screen06-scene.gif) no-repeat scroll 0 100%;
+}
+	
+#the-screen #screen-06 div,
+#the-screen #screen-06 img {
+	margin: 0;
+	padding: 0;
+	}
+	
+#the-screen #screen-06 .spiderman-complete{
+	height:170px;
+	left:200px;
+	width:75px;
+	position:relative;
+	-webkit-transform:rotate(-30deg);
+	-moz-transform:rotate(-30deg);
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	}
+
+	@-webkit-keyframes spiderman_comlete{
+	0%{-webkit-transform:rotate(-30deg);}
+	10%{-webkit-transform:rotate(-30deg);}
+	20%{-webkit-transform:rotate(-50deg);}
+	30%{-webkit-transform:rotate(-50deg);left:-170px;top:100px;}
+	100%{-webkit-transform:rotate(-50deg);left:-170px;top:100px;}
+	}
+
+	/*  SPIDERMAN WEB ANIMATION FUNCTION
+	================================*/
+#the-screen #screen-06 .spiderman-complete{
+	-webkit-animation-name:spiderman_comlete;
+	-webkit-animation-duration:5s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:22000ms;
+	-webkit-animation-timing-function:ease-in-out;
+	}
+
+#the-screen #screen-06 .torso {
+	position:relative;
+	z-index:100;
+	}
+
+#the-screen #screen-06 .arm-back-complete{
+	height:150px;
+	left:25px;
+	top:110px;
+	width:30px;
+	-webkit-transform:rotate(140deg);
+	-moz-transform:rotate(140deg);
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	}
+
+	@-webkit-keyframes arm_back{
+	0%{-webkit-transform:rotate(140deg);}
+	10%{-webkit-transform:rotate(90deg);top:103px;left:25px;}
+	20%{-webkit-transform:rotate(150deg);top:103px;left:25px;}
+	100%{-webkit-transform:rotate(150deg);top:103px;left:25px;}
+	}
+
+	/*  SPIDERMAN WEB ANIMATION FUNCTION
+	================================*/
+#the-screen #screen-06 .arm-back-complete {
+	-webkit-animation-name:arm_back;
+	-webkit-animation-duration:5s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:22000ms;
+	-webkit-animation-timing-function:ease-in-out;
+	}
+
+#the-screen #screen-06 .arm-back-complete .hand {
+	left:0px;
+	position:relative;
+	top:-15px;
+	-webkit-transform:rotate(20deg);
+	-moz-transform:rotate(20deg);
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	}
+	
+	@-webkit-keyframes arm_back_hand{
+	0%{-webkit-transform:rotate(20deg);}
+	10%{-webkit-transform:rotate(10deg);left:5px;top:-13px;}
+	100%{-webkit-transform:rotate(10deg);left:5px;top:-13px;}
+	}
+
+
+	/* SPIDERMAN WEB ANIMATION FUNCTION
+	================================*/
+#the-screen #screen-06 .arm-back-complete .hand {
+	-webkit-animation-name:arm_back_hand;
+	-webkit-animation-duration:5s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:22000ms;
+	-webkit-animation-timing-function:ease-in-out;
+	}
+
+
+
+#the-screen #screen-06 .arm-back-complete .web{
+	-moz-transform:rotate(75deg);
+	-moz-transform-origin:50% 0;
+	-webkit-transform:rotate(75deg);
+	-webkit-transform-origin:50% 0;
+	left:70px;
+	position:relative;
+	top:-60px;
+}
+
+
+
+
+#the-screen #screen-06 .arm-front-complete{
+	height:160px;
+	left:56px;
+	top:92px;
+	width:30px;
+	position:absolute;
+	z-index:400;
+	-webkit-transform:rotate(20deg);
+	-moz-transform:rotate(20deg);
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	}
+	
+	@-webkit-keyframes arm_front{
+	0%{-webkit-transform:rotate(20deg);}
+	10%{-webkit-transform:rotate(80deg);left:62px;top:99px;}
+	20%{-webkit-transform:rotate(150deg);left:55px;top:107px;}
+	100%{-webkit-transform:rotate(150deg);left:55px;top:107px;}
+	}
+
+
+	/* SPIDERMAN WEB ANIMATION FUNCTION
+	================================*/
+#the-screen #screen-06 .arm-front-complete {
+	-webkit-animation-name:arm_front;
+	-webkit-animation-duration:5s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:22000ms;
+	-webkit-animation-timing-function:ease-in-out;
+	}	
+		
+#the-screen #screen-06 .arm-front-complete .hand{ 
+	left:10px;
+	position:relative;
+	top:-10px;
+	-webkit-transform:rotate(100deg);
+	-moz-transform:rotate(100deg);
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;	
+	}
+
+ 	@-webkit-keyframes arm_front_hand{
+ 	0%{-webkit-transform:rotate(100deg);}
+ 	10%{-webkit-transform:rotate(20deg);left:1px;top:-10px;}
+ 	100%{-webkit-transform:rotate(20deg);left:1px;top:-10px;}
+ 	}
+ 
+ 	/* SPIDERMAN WEB ANIMATION FUNCTION
+ 	================================*/
+#the-screen #screen-06 .arm-front-complete .hand{
+ 	-webkit-animation-name:arm_front_hand;
+ 	-webkit-animation-duration:5s;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:22000ms;
+ 	-webkit-animation-timing-function:ease-in-out;
+ 	}	
+ 
+#the-screen #screen-06 .leg-back-complete{
+	height:170px;
+	left:30px;
+	top:149px;
+	width:67px;
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-webkit-transform-origin:50% 0;
+	-moz-transform-origin:50% 0;
+	}
+
+  	@-webkit-keyframes leg_back{
+  	0%{-webkit-transform:rotate(90deg);}
+	20%{-webkit-transform:rotate(90deg);}
+  	30%{-webkit-transform:rotate(10deg);left:10px;top:155px;}
+  	100%{-webkit-transform:rotate(10deg);left:10px;top:155px;}
+  	}
+
+  	/* SPIDERMAN WEB ANIMATION FUNCTION
+  	================================*/
+#the-screen #screen-06 .leg-back-complete{
+  	-webkit-animation-name:leg_back;
+  	-webkit-animation-duration:5s;
+  	-webkit-animation-iteration-count:1;
+  	-webkit-animation-delay:22000ms;
+  	-webkit-animation-timing-function:ease-in-out;
+  	}
+
+#the-screen #screen-06 .leg-front-complete{
+	height:170px;
+	left:32px;
+	position:absolute;
+	top:146px;
+	width:67px;
+	z-index:300;
+	-webkit-transform:rotate(70deg);
+	-moz-transform:rotate(70deg);
+	-webkit-transform-origin:50% 0;
+	-moz-transform-origin:50% 0;
+	}
+
+	@-webkit-keyframes leg_front{
+	0%{-webkit-transform:rotate(70deg);}
+	20%{-webkit-transform:rotate(70deg);}
+	30%{-webkit-transform:rotate(0deg);left:10px;top:155px;}
+	100%{-webkit-transform:rotate(0deg);left:10px;top:155px;}
+	}
+
+	  	/* SPIDERMAN WEB ANIMATION FUNCTION
+	  	================================*/
+#the-screen #screen-06 .leg-front-complete{
+	  	-webkit-animation-name:leg_front;
+	  	-webkit-animation-duration:5s;
+	  	-webkit-animation-iteration-count:1;
+	  	-webkit-animation-delay:22000ms;
+	  	-webkit-animation-timing-function:ease-in-out;
+	  	}
+
+#the-screen #screen-06 .leg-back-complete .foot{
+	left:16px;
+	position:relative;
+	top:9px;
+	-webkit-transform:rotate(-125deg);
+	-moz-transform:rotate(-125deg);
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	}
+
+
+ 	@-webkit-keyframes leg_back_foot{
+ 	0%{-webkit-transform:rotate(-125deg);}
+   	20%{-webkit-transform:rotate(-125deg);}
+ 	30%{-webkit-transform:rotate(-45deg);left:0px;top:0px;}
+ 	100%{-webkit-transform:rotate(-45deg);left:0px;top:0px;}
+ 	}
+
+ 	/* SPIDERMAN WEB ANIMATION FUNCTION
+ 	================================*/
+   #the-screen #screen-06 .leg-back-complete .foot{
+ 	-webkit-animation-name:leg_back_foot;
+ 	-webkit-animation-duration:5s;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:22000ms;
+ 	-webkit-animation-timing-function:ease-in-out;
+ 	}
+
+
+
+	#the-screen #screen-06 .leg-front-complete .foot{
+	left:13px;
+	position:relative;
+	top:8px;
+	-webkit-transform:rotate(-120deg);
+	-moz-transform:rotate(-120deg);
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	}
+
+	 @-webkit-keyframes leg_front_foot{
+	 0%{-webkit-transform:rotate(-120deg);}
+	 20%{-webkit-transform:rotate(-120deg);}
+	 30%{-webkit-transform:rotate(-30deg);left:-1px;top:-6px;}
+	 100%{-webkit-transform:rotate(-30deg);left:-1px;top:-6px;}
+	 }
+    
+	 /* SPIDERMAN WEB ANIMATION FUNCTION
+	 ================================*/
+	 #the-screen #screen-06 .leg-front-complete .foot{
+	 -webkit-animation-name:leg_front_foot;
+	 -webkit-animation-duration:5s;
+	 -webkit-animation-iteration-count:1;
+	 -webkit-animation-delay:22000ms;
+	 -webkit-animation-timing-function:ease-in-out;
+	 }
+
+
+/* SCREEN-07 BASIC SETUP
+====================================================*/
+#the-screen #screen-07 {
+	background: #CCCDF5 url(../img/screen07-bg.gif) no-repeat scroll 99% 11%;
+	}
+
+	 @-webkit-keyframes screen07_bg{
+	 0%{background-position: 99% 11%;}
+	 100%{background-position: 1% 88%;}
+	 }
+
+	 /* SPIDERMAN WEB ANIMATION FUNCTION
+	 ================================*/
+	 #the-screen #screen-07{
+	 -webkit-animation-name:screen07_bg;
+	 -webkit-animation-duration:3s;
+	 -webkit-animation-iteration-count:1;
+	 -webkit-animation-delay:24000ms;
+	 }
+
+	#the-screen #screen-07 div,
+	#the-screen #screen-07 img {
+		margin: 0;
+		padding: 0;
+		position: relative;
+	 	}
+	
+	#the-screen #screen-07 img {
+ 		position:absolute;
+ 		}
+ 		
+		#the-screen #screen-07 img.spiderman-complete {
+			right:20px;top:-90px;
+	 		}
+
+		 @-webkit-keyframes screen07_complete{
+		 0%{	right:-150px;top:-185px;}
+		70%{right:550px;top:150px;}
+		 100%{right:550px;top:150px;}
+		 }
+
+		 /* SPIDERMAN WEB ANIMATION FUNCTION
+		 ================================*/
+		 #the-screen #screen-07 img.spiderman-complete{
+		 -webkit-animation-name:screen07_complete;
+		 -webkit-animation-duration:3s;
+		 -webkit-animation-iteration-count:1;
+		 -webkit-animation-delay:24000ms;
+		 }
+
+
+
+ /* SCREEN-08 BASIC SETUP
+ ====================================================*/
+
+ #the-screen #screen-08 {
+ 	background: #CCCDF5 url(../img/screen08-wall.png) no-repeat scroll -20% 100%;
+	}
+
+ #the-screen #screen-08 div,
+ #the-screen #screen-08 img {
+ 	margin: 0;
+ 	padding: 0;
+ 	}
+
+
+	@-webkit-keyframes screen08_bg{
+	0%{background-position: -20% 100%;}
+	100%{background-position: -20% 10%;}
+	}
+
+	/* SPIDERMAN ANIMATION FUNCTION
+	================================*/
+ #the-screen #screen-08 {
+	-webkit-animation-name:screen08_bg;
+	-webkit-animation-duration:20s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:25000ms;
+	}
+
+#screen-08 .spiderman-complete {left:90px;top:50px;}
+
+#screen-08 img.torso {position:relative;z-index:8888;}
+
+/*LEFT ARM 
+=======================================*/
+#screen-08 .arm-left {left:-1px;top:77px;width:35px;height:135px;padding:0;margin:0;border:1px dotted orange;
+-webkit-transform:rotate(120deg);
+-moz-transform:rotate(120deg);
+-webkit-transform-origin: 50% 0%;
+-moz-transform-origin: 50% 0%;
+}
+
+@-webkit-keyframes screen08_armleft{
+0%{	-webkit-transform:rotate(120deg);left:-1px;top:77px;}
+10%{-webkit-transform:rotate(10deg);left:-8px;top:71px;}
+20%{-webkit-transform:rotate(120deg);left:-1px;top:77px;}
+30%{-webkit-transform:rotate(10deg);left:-8px;top:71px;}
+40%{-webkit-transform:rotate(120deg);left:-1px;top:77px;}
+50%{-webkit-transform:rotate(10deg);left:-8px;top:71px;}
+60%{-webkit-transform:rotate(120deg);left:-1px;top:77px;}
+70%{-webkit-transform:rotate(10deg);left:-8px;top:71px;}
+80%{-webkit-transform:rotate(120deg);left:-1px;top:77px;}
+90%{-webkit-transform:rotate(10deg);left:-8px;top:71px;}
+100%{-webkit-transform:rotate(10deg);left:-8px;top:71px;}
+}
+
+/* SPIDERMAN ANIMATION FUNCTION
+================================*/
+#screen-08 .arm-left {
+-webkit-animation-name:screen08_armleft;
+-webkit-animation-duration:7s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-delay:25000ms;
+}
+
+/*LEFT HAND 
+=======================================*/
+#screen-08 .arm-left img.hand-l{
+position:relative;
+top:-10px;
+left:0;
+-webkit-transform:rotate(50deg);
+-moz-transform:rotate(50deg);
+-webkit-transform-origin: 50% 0%;
+-moz-transform-origin: 50% 0%;
+}
+
+/* KEYFRAMES
+================================*/
+@-webkit-keyframes screen08_handleft{
+0%{-webkit-transform:rotate(50deg);left:0;top:-10px;}
+10%{-webkit-transform:rotate(150deg);left:6px;top:-5px;}
+20%{-webkit-transform:rotate(50deg);left:0;top:-10px;}
+30%{-webkit-transform:rotate(150deg);left:6px;top:-5px;}
+40%{-webkit-transform:rotate(50deg);left:0;top:-10px;}
+50%{-webkit-transform:rotate(150deg);left:6px;top:-5px;}
+60%{-webkit-transform:rotate(50deg);left:0;top:-10px;}
+70%{-webkit-transform:rotate(150deg);left:6px;top:-5px;}
+80%{-webkit-transform:rotate(50deg);left:0;top:-10px;}
+90%{-webkit-transform:rotate(150deg);left:6px;top:-5px;}
+100%{-webkit-transform:rotate(150deg);left:6px;top:-5px;}
+}
+
+/* FUNCTION
+================================*/
+#screen-08 .arm-left img.hand-l {
+-webkit-animation-name:screen08_handleft;
+-webkit-animation-duration:7s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-delay:25000ms;
+}
+
+#screen-08 .arm-right {left:25px;top:73px;width:35px;height:135px;padding:0;margin:0;
+	-webkit-transform:rotate(-30deg);
+	-moz-transform:rotate(-30deg);
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;	
+	}
+
+	@-webkit-keyframes screen08_armright{
+	0%{	-webkit-transform:rotate(-30deg);left:25px;top:73px;}
+	10%{-webkit-transform:rotate(-130deg);left:20px;top:80px;}
+	20%{-webkit-transform:rotate(-30deg);left:25px;top:73px;}
+	30%{-webkit-transform:rotate(-130deg);left:20px;top:80px;}
+	40%{-webkit-transform:rotate(-30deg);left:25px;top:73px;}
+	50%{-webkit-transform:rotate(-130deg);left:20px;top:80px;}
+	60%{-webkit-transform:rotate(-30deg);left:25px;top:73px;}
+	70%{-webkit-transform:rotate(-130deg);left:20px;top:80px;}
+	80%{-webkit-transform:rotate(-30deg);left:25px;top:73px;}
+	90%{-webkit-transform:rotate(-130deg);left:20px;top:80px;}
+	100%{-webkit-transform:rotate(-130deg);left:20px;top:80px;}
+	}
+
+	/* SPIDERMAN ANIMATION FUNCTION
+	================================*/
+#screen-08 .arm-right {
+	-webkit-animation-name:screen08_armright;
+	-webkit-animation-duration:7s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:25000ms;
+	}
+
+	#screen-08 .arm-right img.hand-r{
+	left:-6px;
+	position:relative;
+	top:-6px;
+	-webkit-transform:rotate(-140deg);
+	-moz-transform:rotate(-140deg);
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	}
+
+	@-webkit-keyframes screen08_handright{
+	0%{	-webkit-transform:rotate(-140deg);left:-6px;top:-6px;}
+	10%{-webkit-transform:rotate(-40deg);left:-5px;top:-15px;}
+	20%{-webkit-transform:rotate(-140deg);left:-6px;top:-6px;}
+	30%{-webkit-transform:rotate(-40deg);left:-5px;top:-15px;}
+	40%{-webkit-transform:rotate(-140deg);left:-6px;top:-6px;}	
+	50%{-webkit-transform:rotate(-40deg);left:-5px;top:-15px;}
+	60%{-webkit-transform:rotate(-140deg);left:-6px;top:-6px;}	
+	70%{-webkit-transform:rotate(-40deg);left:-5px;top:-15px;}
+	80%{-webkit-transform:rotate(-140deg);left:-6px;top:-6px;}	
+	90%{-webkit-transform:rotate(-40deg);left:-5px;top:-15px;}
+	100%{-webkit-transform:rotate(-40deg);left:-5px;top:-15px;}
+	}
+
+	/* SPIDERMAN ANIMATION FUNCTION
+	================================*/
+#screen-08 .arm-right img.hand-r{
+	-webkit-animation-name:screen08_handright;
+	-webkit-animation-duration:7s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:25000ms;
+	}
+
+#screen-08 .leg-left {
+	left:-15px;top:131px;
+	margin:0;
+	padding:0;
+	width:60px;
+	height:145px;
+-webkit-transform:rotate(20deg);
+-moz-transform:rotate(20deg);
+-webkit-transform-origin: 99% 0%;
+-moz-transform-origin: 99% 0%;
+}
+
+	@-webkit-keyframes screen08_legleft{
+	0%{	-webkit-transform:rotate(20deg);	left:-15px;top:131px;}
+	10%{-webkit-transform:rotate(100deg);	left:-40px;top:150px;}
+	20%{-webkit-transform:rotate(20deg);	left:-15px;top:131px;}
+	30%{-webkit-transform:rotate(100deg);	left:-40px;top:150px;}
+	40%{-webkit-transform:rotate(20deg);	left:-15px;top:131px;}
+	50%{-webkit-transform:rotate(100deg);	left:-40px;top:150px;}
+	60%{-webkit-transform:rotate(20deg);	left:-15px;top:131px;}
+	70%{-webkit-transform:rotate(100deg);	left:-40px;top:150px;}
+	80%{-webkit-transform:rotate(20deg);	left:-15px;top:131px;}
+	90%{-webkit-transform:rotate(100deg);	left:-40px;top:150px;}
+	100%{-webkit-transform:rotate(100deg);	left:-40px;top:150px;}
+	}
+
+	/* SPIDERMAN ANIMATION FUNCTION
+	================================*/
+#screen-08 .leg-left{
+	-webkit-animation-name:screen08_legleft;
+	-webkit-animation-duration:7s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:25000ms;
+	}
+
+#screen-08 .leg-left img.foot-l{
+ left:-7px;top:-20px;
+ position:relative;
+ -webkit-transform:rotate(-40deg);
+ -moz-transform:rotate(-40deg);
+ -webkit-transform-origin: 97% 0%;
+ -moz-transform-origin: 97% 0%;
+}
+
+	@-webkit-keyframes screen08_footleft{
+	0%{	-webkit-transform:rotate(-40deg);left:-7px;top:-20px;}
+	10%{-webkit-transform:rotate(-120deg);left:-28px;top:-20px;}
+	20%{-webkit-transform:rotate(-40deg);left:-7px;top:-20px;}
+	30%{-webkit-transform:rotate(-120deg);left:-28px;top:-20px;}
+	40%{-webkit-transform:rotate(-40deg);left:-7px;top:-20px;}
+	50%{-webkit-transform:rotate(-120deg);left:-28px;top:-20px;}
+	60%{-webkit-transform:rotate(-40deg);left:-7px;top:-20px;}
+	70%{-webkit-transform:rotate(-120deg);left:-28px;top:-20px;}
+	80%{-webkit-transform:rotate(-40deg);left:-7px;top:-20px;}
+	90%{-webkit-transform:rotate(-120deg);left:-28px;top:-20px;}
+	100%{-webkit-transform:rotate(-120deg);left:-28px;top:-20px;}
+	}
+
+	/* SPIDERMAN ANIMATION FUNCTION
+	================================*/
+#screen-08 .leg-left img.foot-l{
+	-webkit-animation-name: screen08_footleft;
+	-webkit-animation-duration:7s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:25000ms;
+	}
+
+#screen-08 .leg-right {left:30px;top:143px;margin:0;padding:0;width:60px;height:145px;
+-webkit-transform:rotate(-100deg);
+-moz-transform:rotate(-100deg);
+-webkit-transform-origin: 3% 0%;
+-moz-transform-origin: 3% 0%;	
+}
+
+	@-webkit-keyframes screen08_legright{
+	0%{-webkit-transform:rotate(-100deg);	left:30px;top:143px;}
+	10%{-webkit-transform:rotate(-20deg);	left:20px;top:125px;}
+	20%{-webkit-transform:rotate(-100deg);	left:30px;top:143px;}
+	30%{-webkit-transform:rotate(-40deg);	left:20px;top:125px;}
+	40%{-webkit-transform:rotate(-100deg);	left:30px;top:143px;}
+	50%{-webkit-transform:rotate(-40deg);	left:20px;top:125px;}
+	60%{-webkit-transform:rotate(-100deg);	left:30px;top:143px;}
+	70%{-webkit-transform:rotate(-40deg);	left:20px;top:125px;}
+	80%{-webkit-transform:rotate(-100deg);	left:30px;top:143px;}
+	90%{-webkit-transform:rotate(-40deg);	left:20px;top:125px;}
+	100%{-webkit-transform:rotate(-40deg);	left:20px;top:125px;}
+	}
+
+	/* SPIDERMAN ANIMATION FUNCTION
+	================================*/
+#screen-08 .leg-right{
+	-webkit-animation-name:screen08_legright;
+	-webkit-animation-duration:7s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:25000ms;
+	}
+
+#screen-08 .leg-right img.foot-r{
+left:28px;
+position:relative;
+top:-18px;
+-webkit-transform:rotate(120deg);
+-moz-transform:rotate(120deg);
+-webkit-transform-origin: 3% 0%;
+-moz-transform-origin: 3% 0%;
+}
+
+	@-webkit-keyframes screen08_footright{
+	0%{-webkit-transform:rotate(120deg);	left:28px;top:-18px;}
+	10%{-webkit-transform:rotate(20deg);	left:3px;top:-20px;}
+	20%{-webkit-transform:rotate(120deg);	left:28px;top:-18px;}
+	30%{-webkit-transform:rotate(20deg);	left:3px;top:-20px;}
+	40%{-webkit-transform:rotate(120deg);	left:28px;top:-18px;}
+	50%{-webkit-transform:rotate(20deg);	left:3px;top:-20px;}
+	60%{-webkit-transform:rotate(120deg);	left:28px;top:-18px;}
+	70%{-webkit-transform:rotate(20deg);	left:3px;top:-20px;}
+	80%{-webkit-transform:rotate(120deg);	left:28px;top:-18px;}
+	90%{-webkit-transform:rotate(20deg);	left:3px;top:-20px;}
+	100%{-webkit-transform:rotate(20deg);	left:3px;top:-20px;}
+	}
+
+	/* SPIDERMAN ANIMATION FUNCTION
+	================================*/
+#screen-08 .leg-right img.foot-r{
+	-webkit-animation-name:screen08_footright;
+	-webkit-animation-duration:7s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:25000ms;
+	}
+
+ /* SCREEN-09 BASIC SETUP
+ ====================================================*/
+
+	 #the-screen #screen-09 {
+	 	background: #CCCDF5 url(../img/screen-09-bg.gif) no-repeat scroll 100% 0%;  	
+	}
+
+	 #the-screen #screen-09 div,
+	 #the-screen #screen-09 img {
+	 	margin: 0;
+	 	padding: 0;
+	 	}
+
+#screen-09 .spiderman-complete {
+	left:-100px;
+	top:-200px;
+}
+
+	@-webkit-keyframes screen09_complete{
+	0%{left:-100px;top:-200px;}
+	90%{left:200px;top:370px;}
+	100%{left:200px;top:750px;}
+	}
+
+	/* SPIDERMAN ANIMATION FUNCTION
+	================================*/
+#screen-09 .spiderman-complete{
+	-webkit-animation-name:screen09_complete;
+	-webkit-animation-duration:1100ms;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:27000ms;
+	-webkit-transition-timing-function: ease-in;
+	}
+	
+	
+	
+	
+/* SCREEN-10 BASIC SETUP
+====================================================*/
+#the-screen #screen-10 {
+background: #CCCDF5 url(../img/screen-10-bg.png) no-repeat scroll 0% 0%;
+}
+
+#the-screen #screen-10 div,
+#the-screen #screen-10 img {
+margin: 0;
+padding: 0;
+}	
+		
+#screen-10 .spiderman-complete img {
+width:150px; left:120px; position:absolute; top:-50px;
+	}
+
+
+	
+	
+	@-webkit-keyframes screen10_complete{
+	0%{width:150px; left:120px; position:absolute; top:-50px;}
+	100%{left:-230px;
+	position:absolute;
+	top:-1500px;
+	width:900px;}
+	}
+
+	/* SPIDERMAN ANIMATION FUNCTION
+	================================*/
+#screen-10 .spiderman-complete img{
+	-webkit-animation-name:screen10_complete;
+	-webkit-animation-duration:3000ms;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-delay:28000ms;
+	-webkit-transition-timing-function: ease-in-out;
+	}	
+	
+	
+/* SCREEN-11 BASIC SETUP
+====================================================*/
+#the-screen #screen-11 {
+background: #CCCDF5 url(../img/screen-11-bg.png) no-repeat scroll 0% 0%;
+}
+
+#the-screen #screen-11 div,
+#the-screen #screen-11 img {
+margin: 0;
+padding: 0;
+}	
+
+#screen-11 .strip-left {
+	position:absolute;
+	top:56px;left:128px;
+	-webkit-transform:rotate(-20deg);
+	-moz-transform:rotate(-20deg);
+	-webkit-transform-origin: 100% 0%;
+	-moz-transform-origin:100% 0%;
+	}
+
+ 	@-webkit-keyframes screen11_stripleft{
+ 	0%{-webkit-transform:rotate(-20deg);top:56px;left:128px;}
+ 	100%{-webkit-transform:rotate(20deg);top:56px;left:128px;}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+#screen-11 .strip-left {
+ 	-webkit-animation-name:screen11_stripleft;
+ 	-webkit-animation-duration:1500ms;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:29000ms;
+ 	-webkit-transition-timing-function: ease-in;
+ 	}
+
+#screen-11 .strip-right {
+	left:162px;
+	position:absolute;
+	top:56px;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin:0% 0%;
+	}
+
+ 	@-webkit-keyframes screen11_stripright{
+ 	0%{-webkit-transform:rotate(45deg);top:56px;left:162px;}
+ 	100%{-webkit-transform:rotate(-20deg);}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+	#screen-11 .strip-right {
+ 	-webkit-animation-name:screen11_stripright;
+ 	-webkit-animation-duration:1500ms;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:29000ms;
+ 	-webkit-transition-timing-function: ease-in;
+ 	}
+
+
+	#screen-11 .tbar {
+	left:130px;
+	position:absolute;
+	top:70px;
+	width:60px;
+	}
+
+ 	@-webkit-keyframes screen11_tbar{
+ 	0%{top:70px;left:130px;width:60px;}
+ 	100%{left:-100px;top:0;width:950px;}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+	#screen-11 .tbar {
+ 	-webkit-animation-name:screen11_tbar;
+ 	-webkit-animation-duration:2000ms;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:29000ms;
+ 	-webkit-transition-timing-function: ease-in;
+ 	}
+
+/* SCREEN-12 BASIC SETUP
+====================================================*/
+	#the-screen #screen-12 {
+	background: #CCCDF5 url(../img/screen-12-bg.gif) no-repeat scroll 0% 0%;
+	}
+
+	#the-screen #screen-12 div,
+	#the-screen #screen-12 img {
+	margin: 0;
+	padding: 0;
+	}
+
+	#screen-12 .tbar {
+	left:-200px;top:-300px;width:900px;
+	position:absolute;
+	}
+
+
+ 	@-webkit-keyframes screen12_tbar{
+ 	0%{left:-200px;top:-300px;width:900px;}
+ 	70%{left:221px;top:251px;width:30px;}
+ 	100%{left:221px;top:251px;width:30px;}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+	#screen-12 .tbar {
+ 	-webkit-animation-name:screen12_tbar;
+ 	-webkit-animation-duration:2000ms;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:30000ms;
+ 	-webkit-transition-timing-function: ease-in;
+ 	}
+
+/* SCREEN-13 BASIC SETUP
+====================================================*/
+	#the-screen #screen-13 {
+	background: #CCCDF5 url(../img/screen-13-bg.gif) no-repeat scroll 0% 0%;
+	}
+
+	#the-screen #screen-13 div,
+	#the-screen #screen-13 img {
+	margin: 0;
+	padding: 0;
+	}
+
+	#screen-13 .spiderman-complete {
+	left:100px;top:-900px;width:360px;
+	position:absolute;
+	-webkit-transform-origin: 100% 0%;
+	-moz-transform-origin:100% 0%;
+	}
+
+ 	@-webkit-keyframes screen13_spiderman{
+ 	0%{left:500px;top:-900px;width:360px;}
+ 	10%{left:500px;top:-900px;width:360px;}
+	45%{left:200px;top:-100px;width:180px;}
+	100%{left:200px;top:-800px;width:180px;}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+	#screen-13 .spiderman-complete {
+ 	-webkit-animation-name:screen13_spiderman;
+ 	-webkit-animation-duration:3500ms;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:31000ms;
+ 	-webkit-transition-timing-function: ease-in;
+ 	}
+
+
+	/*beginning*/
+	#screen-13 .tbar {
+  	 left:-200px;top:-167px;width:592px;
+  	 position:absolute;
+  	 -webkit-transform-origin: 0% 50%;
+  	 -moz-transform-origin:0% 50%;
+	}
+
+ 	@-webkit-keyframes screen13_tbar{
+ 	0%{left:-200px;top:-467px;width:592px;}
+	45%{left:84px;top:150px;width:234px;}
+	100%{left:84px;top:-590px;width:234px;}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+	#screen-13 .tbar {
+ 	-webkit-animation-name:screen13_tbar;
+ 	-webkit-animation-duration:3500ms;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:31000ms;
+ 	-webkit-transition-timing-function: ease-in;
+ 	}
+/* SCREEN-14 BASIC SETUP
+====================================================*/
+#the-screen #screen-14 {
+background: #CCCDF5 url(../img/screen-14-bg.png) no-repeat scroll 0% 0%;
+}
+
+ 	@-webkit-keyframes screen14_screen{
+ 	0%{background-position: 0 0;}
+ 	100%{background-position: -700px 0;}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+#the-screen #screen-14 {
+ 	-webkit-animation-name:screen14_screen;
+ 	-webkit-animation-duration:20000ms;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:33000ms;
+ 	-webkit-transition-timing-function: ease-out;
+	}
+
+#the-screen #screen-14 div,
+#the-screen #screen-14 img {
+margin: 0;
+padding: 0;
+}
+
+#screen-14 .spiderman-complete {
+left:0px;
+position:absolute;
+top:0px;
+}
+
+ 	@-webkit-keyframes screen14_spiderman{
+ 	0%{left:-400px;}
+	50%{left:0px;}
+ 	100%{left:500px;}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+#screen-14 .spiderman-complete {
+ 	-webkit-animation-name:screen14_spiderman;
+ 	-webkit-animation-duration:10000ms;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:33000ms;
+ 	-webkit-transition-timing-function: ease-out-in;
+	}
+
+#screen-14 .spiderman-complete img.spiderman {
+width:373px;
+}
+
+#screen-14 .spiderman-hand {
+	-webkit-transform:rotate(-30deg);
+	-webkit-transform-origin:50% 100%;
+	-moz-transform:rotate(-30deg);
+	-moz-transform-origin:50% 100%;
+	left:40px;
+	position:absolute;
+	top:0;
+	width:126px;
+	}
+
+ 	@-webkit-keyframes screen14_hand{
+ 	0%{-webkit-transform:rotate(-30deg);left:40px;top:0;width:126px;}
+	100%{-webkit-transform:rotate(30deg);left:16px;top:30px;width:126px;}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+#screen-14 .spiderman-hand {
+ 	-webkit-animation-name:screen14_hand;
+ 	-webkit-animation-duration:500ms;
+ 	-webkit-animation-iteration-count:20;
+ 	-webkit-animation-delay:33000ms;
+ 	-webkit-transition-timing-function: ease-in;
+    -webkit-animation-direction: alternate;
+}
+
+/* SCREEN-15 BASIC SETUP
+====================================================*/
+#the-screen #screen-15 {
+background: #CCCDF5 url(../img/screen-15-bg.png) no-repeat scroll 0% 0%;
+}
+
+#the-screen #screen-15 div,
+#the-screen #screen-15 img {
+margin: 0;
+padding: 0;
+}
+
+#screen-15 .spiderman-complete {
+	-webkit-transform:rotate(60deg);
+	-webkit-transform-origin:50% 0;
+	-moz-transform:rotate(60deg);
+	-moz-transform-origin:50% 0;
+	height:150px;
+	left:206px;
+	position:relative;
+	top:60px;
+	width:22px;
+}
+
+
+ 	@-webkit-keyframes screen15_spiderman{
+ 	0%{-webkit-transform:rotate(60deg);}
+ 	100%{-webkit-transform:rotate(-80deg);}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+	#screen-15 .spiderman-complete {
+ 	-webkit-animation-name:screen15_spiderman;
+ 	-webkit-animation-duration:4000ms;
+ 	-webkit-animation-iteration-count:10;
+ 	-webkit-animation-delay:40000ms;
+ 	-webkit-transition-timing-function: ease-in;
+    -webkit-animation-direction: alternate;
+	}
+
+	#screen-15 .spiderman-complete .web {
+	position:absolute;
+	left:0;
+	}
+	
+	#screen-15 .spiderman-complete .man {
+	position:absolute;
+	top:98px;
+	left:2px;
+	-webkit-transform:rotate(30deg);
+	-webkit-transform-origin:50% 0;
+	-moz-transform:rotate(30deg);
+	-moz-transform-origin:50% 0;
+	}
+
+ 	@-webkit-keyframes screen15_man{
+ 	0%{-webkit-transform:rotate(30deg);left:2px;top:98px;}
+ 	100%{-webkit-transform:rotate(-70deg);left:-5px;top:97px;}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+	#screen-15 .spiderman-complete .man {
+ 	-webkit-animation-name:screen15_man;
+ 	-webkit-animation-duration:4000ms;
+ 	-webkit-animation-iteration-count:10;
+ 	-webkit-animation-delay:40000ms;
+ 	-webkit-transition-timing-function: ease-in;
+    -webkit-animation-direction: alternate;
+	}
+
+
+
+	/* SCREEN-17 BASIC SETUP
+	====================================================*/
+	#the-screen #screen-17 {
+	background: #CCCDF5 url(../img/screen-17-bg.png) no-repeat scroll 0% 0%;
+	}
+	
+	#the-screen #screen-17 div,
+	#the-screen #screen-17 img {
+	margin: 0;
+	padding: 0;
+	}
+
+	#screen-17 .spiderman-complete {
+	left:100px;top:-400px;width:178px;
+	position:absolute;
+	}
+	
+	#screen-17 .spiderman-complete {
+	left:186px;top:-10px;width:20px;
+	position:absolute;
+	}
+
+ 	@-webkit-keyframes screen17_man {
+ 	0%{left:100px;top:-400px;width:178px;}
+ 	100%{left:186px;top:-10px;width:20px;}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+	#screen-17 .spiderman-complete {
+ 	-webkit-animation-name:screen17_man;
+ 	-webkit-animation-duration:3000ms;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:41500ms;
+ 	-webkit-transition-timing-function: ease-in;
+	}
+
+	/* SCREEN-18 BASIC SETUP
+	====================================================*/
+	#the-screen #screen-18 {
+	background-color: #CCCDF5;
+	}
+	
+	#the-screen #screen-18 div,
+	#the-screen #screen-18 img {
+	margin: 0;
+	padding: 0;
+	}
+	
+	#screen-18 .spiderman-complete {
+	left:0;top:10px;
+	position:absolute;
+	}
+	
+	@-webkit-keyframes screen18_man {
+ 	0%{left:0;top:325px;}
+ 	20%{left:0;top:10px;-webkit-transform:scale(1);}
+	100%{left:-250px;top:-350px;-webkit-transform:scale(3.5);}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+	#screen-18 .spiderman-complete {
+ 	-webkit-animation-name:screen18_man;
+ 	-webkit-animation-duration:6000ms;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:43500ms;
+ 	-webkit-transition-timing-function: ease-in;
+	}
+	
+	#screen-18 .body {
+	position:absolute;
+	top:0;
+	left:0;
+	}
+	
+	#screen-18 .hand {
+	left:-5px;top:38px;
+	position:absolute;
+	}
+	
+	@-webkit-keyframes screen18_hand {
+ 	0%{left:-5px;top:375px;}
+ 	100%{left:-5px;top:38px;}
+ 	}
+
+ 	/* SPIDERMAN ANIMATION FUNCTION
+ 	================================*/
+	#screen-18 .hand {
+ 	-webkit-animation-name:screen18_hand;
+ 	-webkit-animation-duration:2000ms;
+ 	-webkit-animation-iteration-count:1;
+ 	-webkit-animation-delay:43500ms;
+ 	-webkit-transition-timing-function: ease-in;
+	}
+	
+	/* SCREEN-19 BASIC SETUP
+	====================================================*/
+	#the-screen #screen-19 {
+	background: #CCCDF5 url(../img/screen-19-bg.png) no-repeat scroll -100px 20px;
+	}
+	
+	#the-screen #screen-19 div,
+	#the-screen #screen-19 img {
+	margin: 0;
+	padding: 0;
+	}
+	
+	#screen-19 .spiderman-complete {
+	left:100px;
+	position:absolute;
+	top:80px;
+	z-index:19000;
+	width:180px;
+	}
+	
+	#screen-19 .foreground {
+	left:0;
+	position:relative;
+	top:5px;
+	width:450px;
+	}
+		
+
+		
+		#home #the-screen #screen-01 span a {
+			background: #53809F url(../img/play.png) no-repeat scroll 0 100%;
+				text-indent:-9999px;
+				display:block;
+				cursor:pointer;
+				height: 325px;
+				width: 425px;
+		}
+
+		
